@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	
-	<title>Sigende titel</title>
+	<title>ErhvervsAward</title>
 	
 	<meta name="robots" content="All">
 	<meta name="author" content="Udgiver">
@@ -16,10 +16,15 @@
 
 <body>
 
-<h1>
-	Sigende titel
-</h1>
+<div id="nav-placeholder"></div>
+
 
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+	fetch('navmenu.html')
+			.then(res => res.text())
+			.then(html => document.getElementById('nav-placeholder').innerHTML = html);
+</script>
 </body>
 </html>

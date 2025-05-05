@@ -18,3 +18,44 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 @import "bootstrapComponents";
 
 // 5. Du kan lave styling her...
+
+//navmenu styling
+
+.main-nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background: #f8f8f8;
+}
+
+.nav-links {
+
+}
+
+.logo {
+	height: 100px;
+	width: 100px;
+}
+
+@media (min-width: 768px) {
+	.main-nav {
+		flex-direction: column;
+		position: fixed;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		width: 200px;
+		padding: 1rem;
+	}
+
+	.nav-links {
+		flex-direction: column;
+	}
+
+	.logo {
+		margin-bottom: 2rem;
+	}
+}
