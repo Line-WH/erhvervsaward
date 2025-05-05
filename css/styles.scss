@@ -114,3 +114,10 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 .cta-button:hover {
 	background-color: #005a99;
 }
+
+
+//Seneste nyt
+
+.news-section h2 {
+	font-family: Gloock, serif;
+}
