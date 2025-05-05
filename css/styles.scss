@@ -28,7 +28,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 .main-nav {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	position: fixed;
 	bottom: 0;
 	width: 100%;
@@ -36,12 +36,13 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 }
 
 .nav-links {
+	display: flex;
 
 }
 
 .logo {
-	height: 100px;
-	width: 100px;
+	height: 50px;
+	width: 50px;
 }
 
 @media (min-width: 768px) {
@@ -53,6 +54,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 		bottom: 0;
 		width: 200px;
 		padding: 1rem;
+		align-content: end;
 	}
 
 	.nav-links {
@@ -62,4 +64,53 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 	.logo {
 		margin-bottom: 2rem;
 	}
+}
+
+//hero sektion
+
+.hero {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 4rem 1.5rem;
+	background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+	color: #222;
+}
+
+.hero-content h1 {
+	font-family: "Gloock", serif;
+	font-size: 1.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.hero-content span {
+	font-family: "Gloock", serif;
+}
+
+.subtitle {
+	font-size: 1.125rem;
+	font-family: "DM sans", sans-serif;
+	margin-bottom: 0.75rem;
+}
+
+.date {
+	font-size: 0.95rem;
+	color: #555;
+	margin-bottom: 1.5rem;
+}
+
+.cta-button {
+	display: inline-block;
+	padding: 0.75rem 1.5rem;
+	font-size: 1rem;
+	background-color: #007acc;
+	color: white;
+	border-radius: 8px;
+	text-decoration: none;
+	transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+	background-color: #005a99;
 }
