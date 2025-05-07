@@ -34,6 +34,12 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 	font-family: "DM Sans", sans-serif;
 }
 
+.btn {
+	border-radius: 0;
+	color: #262626;
+	width: 100%;
+}
+
 //navmenu styling
 
 .main-nav {
@@ -43,7 +49,6 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-	background: #f8f8f8;
 }
 
 .nav-links {
@@ -70,6 +75,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 	.nav-links {
 		flex-direction: column;
+		color:  #262626;
 	}
 
 	.logo {
@@ -86,12 +92,13 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 	text-align: center;
 	padding: 4rem 1.5rem;
 	background: linear-gradient(to bottom, #ffffff, #f0f0f0);
-	color: #222;
+	color: #262626;
 }
 
 .hero-content {
 	font-size: 1.5rem;
 	margin-bottom: 0.5rem;
+	color:  #262626;
 }
 
 
@@ -99,11 +106,12 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 	font-size: 1.125rem;
 	font-family: "DM sans", sans-serif;
 	margin-bottom: 0.75rem;
+	color: #262626;
 }
 
 .date {
 	font-size: 0.95rem;
-	color: #555;
+	color: #262626;
 	margin-bottom: 1.5rem;
 }
 
@@ -111,9 +119,9 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 	display: inline-block;
 	padding: 0.75rem 1.5rem;
 	font-size: 1rem;
-	background-color: #007acc;
-	color: white;
-	border-radius: 8px;
+	background-color: #EBCF91;
+	color: #262626;
+	border-radius: 0;
 	text-decoration: none;
 	transition: background 0.3s ease;
 }
@@ -122,3 +130,61 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 	background-color: #005a99;
 }
 
+//Seneste nyt sektion
+
+/* Optional: Additional news section styling */
+.news-section {
+
+}
+
+/* Make card hover feel more interactive */
+.news-section .card:hover {
+	transform: translateY(-4px);
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* Improve spacing inside card body if needed */
+.news-section .card-body {
+	padding: 1.5rem;
+}
+
+/* Refine typography */
+.news-section .card-title {
+	font-size: 1.25rem;
+	margin-bottom: 0.75rem;
+}
+
+.news-section .card-text {
+	font-size: 0.95rem;
+	color: #555;
+}
+
+/* Optional: Style read-more button more prominently */
+.news-section .btn-primary {
+	background-color: #007acc;
+	border-color: #007acc;
+}
+
+.news-section .btn-primary:hover {
+	background-color: #005a99;
+	border-color: #005a99;
+}
+
+
+//om gallaen
+
+.gala-section {
+	background-color: #ffffff;
+	color: #333;
+}
+
+.gala-section .lead {
+	font-size: 1.15rem;
+	margin-bottom: 1.5rem;
+}
+
+.gala-section img {
+	max-height: 400px;
+	object-fit: cover;
+}
