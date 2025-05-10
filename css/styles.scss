@@ -25,6 +25,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 // 5. Du kan lave styling her...
 
+//font styling
 .titel {
 	font-family: "Gloock", serif;
 }
@@ -34,52 +35,78 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 	font-family: "DM Sans", sans-serif;
 }
 
+//utility classes
 .btn {
 	border-radius: 0;
 	color: #262626;
 	width: 100%;
 }
 
+// Bottom padding to prevent nav overlap (e.g. fixed bottom nav height = 80px)
+.pb-nav-safe {
+	padding-bottom: 80px !important;
+}
+
+// Margin for footer when it appears above a bottom nav
+.mb-before-nav {
+	margin-bottom: 80px !important;
+}
+
+// Optional: full safe-padding (top and bottom)
+.py-nav-safe {
+	padding-top: 80px !important;
+	padding-bottom: 80px !important;
+}
+
 //navmenu styling
 
 .main-nav {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
 	position: fixed;
 	bottom: 0;
+	left: 0;
 	width: 100%;
+	z-index: 1000;
+}
+.main-nav .nav-link {
+	color: #222;
+	font-weight: 500;
+	padding: 0.75rem 1rem;
+	transition: background 0.2s ease;
 }
 
-.nav-links {
-	display: flex;
-
+.main-nav .nav-link:hover,
+.main-nav .nav-link:focus {
+	background-color: #f0f0f0;
+	color: #007acc;
+	text-decoration: none;
 }
 
-.logo {
-	height: 50px;
-	width: 50px;
+.logo-img {
+	max-height: 40px;
+	width: auto;
+	display: block;
 }
+
+
 
 @media (min-width: 768px) {
 	.main-nav {
-		flex-direction: column;
-		position: fixed;
-		left: 0;
 		top: 0;
+		left: auto;
+		right: 0;
 		bottom: 0;
 		width: 200px;
-		padding: 1rem;
-		align-content: end;
+		height: 100vh;
+		padding-top: 2rem;
 	}
 
-	.nav-links {
-		flex-direction: column;
-		color:  #262626;
+	.main-nav .nav {
+		align-items: start;
 	}
 
-	.logo {
-		margin-bottom: 2rem;
+	.main-nav .nav-link {
+		text-align: left;
+		padding: 0.75rem 1.5rem;
 	}
 }
 
