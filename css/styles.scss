@@ -37,8 +37,8 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 //utility classes
 .btn {
-	border-radius: 0;
-	color: #262626;
+	background-color: #262626 ;
+	color: #f1e8df;
 	width: 100%;
 }
 
@@ -67,8 +67,13 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 	width: 100%;
 	z-index: 1000;
 }
+
+.nav-item {
+	margin: 8px;
+}
+
 .main-nav .nav-link {
-	color: #222;
+	color: #F1E8DF;
 	font-weight: 500;
 	padding: 0.75rem 1rem;
 	transition: background 0.2s ease;
@@ -76,8 +81,8 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 .main-nav .nav-link:hover,
 .main-nav .nav-link:focus {
-	background-color: #f0f0f0;
-	color: #007acc;
+	background-color: #f1e8df;
+	color: #262626;
 	text-decoration: none;
 }
 
@@ -118,14 +123,15 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 	justify-content: center;
 	text-align: center;
 	padding: 4rem 1.5rem;
-	background: linear-gradient(to bottom, #ffffff, #f0f0f0);
-	color: #262626;
+	color: #f1e8df;
+	width: 100%;
+	background-image: linear-gradient(0deg, transparent, rgb(38, 38, 38)), url("/images/ea4.jpg");
 }
 
 .hero-content {
 	font-size: 1.5rem;
 	margin-bottom: 0.5rem;
-	color:  #262626;
+	color:  #f1e8df;
 }
 
 
@@ -133,12 +139,12 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 	font-size: 1.125rem;
 	font-family: "DM sans", sans-serif;
 	margin-bottom: 0.75rem;
-	color: #262626;
+	color: #f1e8df;
 }
 
 .date {
 	font-size: 0.95rem;
-	color: #262626;
+	color: #f1e8df;
 	margin-bottom: 1.5rem;
 }
 
@@ -146,23 +152,19 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 	display: inline-block;
 	padding: 0.75rem 1.5rem;
 	font-size: 1rem;
-	background-color: #EBCF91;
-	color: #262626;
-	border-radius: 0;
+	background-color: #262626;
+	color: #f1e8df;
+	border-radius: 8px;
 	text-decoration: none;
 	transition: background 0.3s ease;
 }
 
 .cta-button:hover {
-	background-color: #005a99;
+	background-color:#ebcf91;
+	color: #262626;
 }
 
 //Seneste nyt sektion
-
-/* Optional: Additional news section styling */
-.news-section {
-
-}
 
 /* Make card hover feel more interactive */
 .news-section .card:hover {
