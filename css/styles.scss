@@ -82,8 +82,8 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 }
 
 .logo-img {
-	max-height: 40px;
-	width: auto;
+	height: auto;
+	max-width: 150px;
 	display: block;
 }
 
@@ -214,4 +214,40 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 .gala-section img {
 	max-height: 400px;
 	object-fit: cover;
+}
+
+//galleri grid
+
+.gallery-container{
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-gap: 1rem;
+}
+
+.tile img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.tile:nth-child(1){
+	grid-column: span 4;
+	grid-row: span 2;
+}
+
+.tile:nth-child(2),
+.tile:nth-child(3){
+	grid-column: span 2;
+}
+
+.tile:nth-child(4),
+.tile:nth-child(5){
+	grid-column: span 3;
+}
+
+@media (min-width: 768px) {
+	.gallery-container {
+		margin-right: 120px;
+		margin-left: 120px;
+	}
 }
