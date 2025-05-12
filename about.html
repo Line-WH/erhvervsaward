@@ -5,25 +5,67 @@
     <title>Om os</title>
 
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Gloock&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/5f212f015d.js" crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <section class="about-section">
-        <div class="container-fluid">
-            <div class="row-cols">
-                <h1 class="titel">Om foreningen</h1>
 
-                <div class="col-6 col-md-4">
-                        <p class="body-tekst"> Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit,
-                            sed do eiusmod tempor
-                        </p>
+    <nav id="nav-placeholder"></nav>
+
+    <section class="gala-section py-5">
+        <div class="container">
+            <div class="row justify-content-center gy-4">
+
+
+                <div class="col-6 col-md-7">
+                    <h2 class="titel mb-3">Om styregruppen</h2>
+                    <p class="body-tekst lead">
+                       Vi er en styregruppe som har en passion for at fejre erhvervslivet i Slagelse og den passion spejler sig i alt vi gør.
+                    </p>
+                    <p>
+                        Her er der plads til introduktion af styregruppen og mere info hvis der er ønsket.
+                    </p>
                 </div>
-                <div class="col-6 col-md-4">
-                    <img src="..." alt="...">
+
+                <div class="col-6 col-md-5">
+                    <div class="mt-3 mb-3">
+                        <img src="images/eagalla3.jpg" alt="galla" class="img-fluid rounded shadow-sm ">
+                    </div>
+
+                    <div class="mt-3 mb-3">
+                        <img src="images/eagalla2.jpg" alt="galla" class="img-fluid rounded shadow-sm">
+                    </div>
+
+                    <div class="mt-3 mb-3">
+                        <img src="images/eagalla.jpg" alt="galla" class="img-fluid rounded shadow-sm">
+                    </div>
+
+                    <div class="mt-3 mb-3">
+                        <img src="images/ea2.jpg" alt="galla" class="img-fluid rounded shadow-sm">
+                    </div>
+
                 </div>
+
             </div>
         </div>
     </section>
+
+    <footer id="footer-placeholder"></footer>
+
+<script>
+    fetch('navmenu.html')
+        .then(res => res.text())
+        .then(html => document.getElementById('nav-placeholder').innerHTML = html);
+
+    fetch('footer.html')
+        .then(res => res.text())
+        .then(html => document.getElementById('footer-placeholder').innerHTML = html);
+</script>
 
 </body>
 </html>
