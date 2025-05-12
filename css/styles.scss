@@ -68,31 +68,27 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 	z-index: 1000;
 }
 
-.nav-item {
-	margin: 8px;
-}
 
 .main-nav .nav-link {
 	color: #F1E8DF;
-	font-weight: 500;
-	padding: 0.75rem 1rem;
 	transition: background 0.2s ease;
+	padding-top: 0;
+	padding-bottom: 0;
 }
 
 .main-nav .nav-link:hover,
 .main-nav .nav-link:focus {
-	background-color: #f1e8df;
+	background-color: #ebcf91;
 	color: #262626;
 	text-decoration: none;
 }
 
-.logo-img {
-	height: auto;
-	max-width: 150px;
-	display: block;
+
+.fa-regular {
+	width: 37px;
+	height: 37px;
+	align-content: center;
 }
-
-
 
 @media (min-width: 768px) {
 	.main-nav {
@@ -102,7 +98,8 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 		bottom: 0;
 		width: 120px;
 		height: 100vh;
-		padding-top: 2rem;
+		padding-top: 1rem;
+
 	}
 
 	.main-nav .nav {
@@ -111,7 +108,17 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 	.main-nav .nav-link {
 		text-align: left;
-		padding: 0.75rem 1.5rem;
+		font-weight: 500;
+		padding: 1rem;
+	}
+
+	.fa-regular {
+		display: none !important;
+	}
+
+	.nav-logomark {
+		height: 100px;
+		width: 100px;
 	}
 }
 
@@ -166,19 +173,16 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 //Seneste nyt sektion
 
-/* Make card hover feel more interactive */
 .news-section .card:hover {
 	transform: translateY(-4px);
 	transition: transform 0.2s ease, box-shadow 0.2s ease;
 	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
 }
 
-/* Improve spacing inside card body if needed */
 .news-section .card-body {
 	padding: 1.5rem;
 }
 
-/* Refine typography */
 .news-section .card-title {
 	font-size: 1.25rem;
 	margin-bottom: 0.75rem;
@@ -186,18 +190,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 .news-section .card-text {
 	font-size: 0.95rem;
-	color: #555;
-}
-
-/* Optional: Style read-more button more prominently */
-.news-section .btn-primary {
-	background-color: #007acc;
-	border-color: #007acc;
-}
-
-.news-section .btn-primary:hover {
-	background-color: #005a99;
-	border-color: #005a99;
+	color: #262626;
 }
 
 
@@ -253,3 +246,11 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 		margin-left: 120px;
 	}
 }
+
+//Footer styling
+
+.footer-logo {
+	max-width: 150px;
+	max-height: 150px;
+}
+
