@@ -90,13 +90,13 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 	align-content: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
 	.main-nav {
 		top: 0;
 		left: auto;
 		right: 0;
 		bottom: 0;
-		width: 15vh;
+		width: 12vh;
 		height: 100vh;
 		padding-top: 1rem;
 
@@ -243,7 +243,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 	grid-column: span 3;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
 	.gallery-container {
 		margin-right: 120px;
 		margin-left: 120px;
