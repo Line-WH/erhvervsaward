@@ -5,11 +5,20 @@
     <title>Galleri</title>
 
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Gloock&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/5f212f015d.js" crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
 
-    <div class="gallery-container">
+    <nav id="nav-placeholder"></nav>
+
+    <div class="gallery-container mb-2">
         <div class="tile">
             <img src="images/ea1.jpg" alt="">
         </div>
@@ -26,7 +35,38 @@
             <img src="images/ea5.jpg" alt="">
         </div>
     </div>
+    <div class="gallery-container mb-2">
+        <div class="tile">
+            <img src="images/ea6.jpg" alt="">
+        </div>
+        <div class="tile">
+            <img src="images/ea7.jpg" alt="">
+        </div>
+        <div class="tile">
+            <img src="images/ea8.jpg" alt="">
+        </div>
+        <div class="tile">
+            <img src="images/eagalla.jpg" alt="">
+        </div>
+        <div class="tile">
+            <img src="images/eagalla2.jpg" alt="">
+        </div>
+        <h4 class="titel">Foto: Evan Hemmingsen </h4>
+    </div>
 
-    <h2 class="titel">Foto: Evan Hemmingsen </h2>
+
+
+    <footer id="footer-placeholder"> </footer>
+
+    <script>
+        fetch('navmenu.html')
+            .then(res => res.text())
+            .then(html => document.getElementById('nav-placeholder').innerHTML = html);
+
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(html => document.getElementById('footer-placeholder').innerHTML = html);
+    </script>
+
 </body>
 </html>
