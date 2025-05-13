@@ -5,25 +5,80 @@
     <title>Priser</title>
 
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Gloock&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/5f212f015d.js" crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 <body>
-<section class="about-section">
-    <div class="container-fluid">
-        <div class="row-cols">
-            <h1 class="titel">Om foreningen</h1>
+    <nav id="nav-placeholder"></nav>
 
-            <div class="col-6 col-md-4">
-                <p class="body-tekst"> Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit,
-                    sed do eiusmod tempor
-                </p>
-            </div>
-            <div class="col-6 col-md-4">
-                <img src="..." alt="...">
+    <section class="gala-section py-5">
+        <div class="container">
+            <div class="row justify-content-center gy-4">
+
+
+                <div class="col-6 col-md-7">
+                    <h2 class="titel mb-3">Vores priser/Awards</h2>
+                    <p class="body-tekst lead">
+                        Vi har 7 priser som bliver uddelt til arrangementet.
+                    </p>
+                    <p>
+                        Priserne udgør en stor del af arrangementet og er ment som en fejring af særlige virksomheder og personer. Man kan læse mere om hver enkelt herunder.
+                    </p>
+                    <br>
+                    <h4 class="titel mb-3">Frontløber prisen</h4>
+                    <p>En pris der gives til en virksom eller person i Slagelse kommune, som går forrest med gode eksempler......</p>
+                    <br>
+                    <h4 class="titel mb-3">Årets leder</h4>
+                    <p> Prisen Årets Leder skal hylde et menneske, der i sin  lederrolle på en arbejdsplads inden for Slagelse Kommune........</p>
+                    <br>
+                    <h4 class="titel mb-3">Iværksætter prisen</h4>
+                    <p>Iværksætteri handler om at starte og drive en ny virksomhed, om at udvise  risikovillighed, innovation.......</p>
+                    <br>
+                    <h4 class="titel mb-3">Praktik prisen</h4>
+                    <p>Praktikprisen gives til den virksomhed i Slagelse kommune, som i  løbet af det seneste år har været praktikvirksomhed i et eller flere særligt gode praktikforløb .........</p>
+
+                </div>
+
+                <div class="col-6 col-md-5">
+                    <div class="mt-3 mb-3">
+                        <img src="images/eagalla3.jpg" alt="galla" class="img-fluid rounded shadow-sm ">
+                    </div>
+
+                    <div class="mt-3 mb-3">
+                        <img src="images/ea1.jpg" alt="galla" class="img-fluid rounded shadow-sm">
+                    </div>
+
+                    <div class="mt-3 mb-3">
+                        <img src="images/ea2.jpg" alt="galla" class="img-fluid rounded shadow-sm">
+                    </div>
+
+                    <div class="mt-3 mb-3">
+                        <img src="images/ea3.jpg" alt="galla" class="img-fluid rounded shadow-sm">
+                    </div>
+
+                </div>
+
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <footer id="footer-placeholder"></footer>
+
+<script>
+    fetch('navmenu.html')
+        .then(res => res.text())
+        .then(html => document.getElementById('nav-placeholder').innerHTML = html);
+
+    fetch('footer.html')
+        .then(res => res.text())
+        .then(html => document.getElementById('footer-placeholder').innerHTML = html);
+</script>
 
 </body>
 </html>

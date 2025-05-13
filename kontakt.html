@@ -5,25 +5,95 @@
     <title>Kontakt</title>
 
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Gloock&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/5f212f015d.js" crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 <body>
-<section class="about-section">
-    <div class="container-fluid">
-        <div class="row-cols">
-            <h1 class="titel">Kontakt os</h1>
 
-            <div class="col-6 col-md-4">
-                <p class="body-tekst"> Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit,
-                    sed do eiusmod tempor
-                </p>
-            </div>
-            <div class="col-6 col-md-4">
-                <img src="..." alt="...">
+    <nav id="nav-placeholder"></nav>
+
+    <section class="gala-section py-5">
+        <div class="container">
+            <div class="row justify-content-center gy-4">
+
+
+                <div class="col-6 col-md-7">
+                    <h2 class="titel mb-3">Kontakt os</h2>
+                    <br>
+                    <h4 class="body-tekst mb-3">Kontakt info</h4>
+                    <p class="body-tekst lead">Foreningen ErhvervsAward Sdr. Stationsvej 26 4200 Slagelse </p>
+                    <br>
+                    <h4 class="body-tekst mb-3">Email & tlf.nummer</h4>
+                    <p class="body-tekst lead">
+                        Du tilmelder dig til eventkoordinator Helle S. Madsen,
+                        <br>
+                        tlf. 51 26 22 99 eller mail: hsm@event-slagelse.dk</p>
+                    <br>
+                    <h4 class="body-tekst mb-3">Find os på de sociale medier</h4>
+                    <p class="m-2">
+                        <a href="https://www.linkedin.com/in/erhvervsaward/" target="_blank">
+                            <i class="fab fa-linkedin-in fa-regular fa-2x text-ash"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/erhvervsaward/" target="_blank">
+                            <i class="fab fa-instagram fa-regular fa-2x text-ash"></i>
+                        </a>
+                        <a href="https://www.facebook.com/erhvervsaward/" target="_blank">
+                            <i class="fab fa-facebook fa-regular fa-2x text-ash"></i>
+                        </a>
+                    </p>
+                    <br>
+                    <br>
+                    <h4 class="body-tekst mb-3">Tilmeld dig vores nyhedsbrev</h4>
+                    <form>
+                        <div class="form-group m-2">
+                            <label for="exampleFormControlInput1">Email addresse</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="navn@eksempel.com">
+                            <br>
+                            <a href=# class=" btn btn-gold_flat btn-md">Send</a>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-6 col-md-5">
+                    <div class="mt-3 mb-3">
+                        <img src="images/eagalla.jpg" alt="galla" class="img-fluid rounded shadow-sm ">
+                    </div>
+
+                    <div class="mt-3 mb-3">
+                        <img src="images/ea8.jpg" alt="galla" class="img-fluid rounded shadow-sm">
+                    </div>
+
+                    <div class="mt-3 mb-3">
+                        <img src="images/ea7.jpg" alt="galla" class="img-fluid rounded shadow-sm">
+                    </div>
+
+                    <div class="mt-3 mb-3">
+                        <img src="images/eagalla3.jpg" alt="galla" class="img-fluid rounded shadow-sm">
+                    </div>
+                </div>
+
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <footer id="footer-placeholder"></footer>
+
+    <script>
+        fetch('navmenu.html')
+            .then(res => res.text())
+            .then(html => document.getElementById('nav-placeholder').innerHTML = html);
+
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(html => document.getElementById('footer-placeholder').innerHTML = html);
+    </script>
 
 </body>
 </html>
